@@ -1,0 +1,41 @@
+<h1>register</h1>
+
+<style>
+    #d1{
+        width:200px;
+        background-color: rgb(99, 131, 245);
+        align-items: center;
+        align-content: center;
+        padding: 10px;
+    }
+</style>
+
+<div id="d1">
+    <form action="" method="post">
+        {% csrf_token %}
+        
+    
+        <br><br>
+        {{form.username.label}}
+        {{form.username}}
+    
+        <br>
+    
+        {{form.email.label}}
+        {{form.email}}
+    
+        <br>
+    
+        {{form.password1.label}}
+        {{form.password1}}
+    
+        <br>
+    
+        {{form.password2.label}}
+        {{form.password2}}
+    
+        <br>
+            
+        <input type="submit">
+    </form>
+</div>
