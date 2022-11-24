@@ -15,6 +15,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# This line will change old User model to our user model
 AUTH_USER_MODEL = 'accounts.user'
 
 
